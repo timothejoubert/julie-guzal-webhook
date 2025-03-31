@@ -8,7 +8,7 @@ export default defineEventHandler((event) => {
             Authorization: `token ${runtimeConfig?.githubUserToken}`,
         },
         body: {
-            event_type: 'run_github_actions_deploy_from_custom_endpoint',
+            event_type: 'prismic_publish_trigger',
             client_payload: {
                 unit: false,
                 integration: true,
